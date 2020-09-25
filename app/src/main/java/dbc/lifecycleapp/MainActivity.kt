@@ -41,4 +41,13 @@ class MainActivity : AppCompatActivity() {
             Toast.LENGTH_SHORT
         ).show()
     }
+
+    override fun onStop() {
+        super.onStop()
+        Toast.makeText(
+            this,
+            "onStop() function is called",
+            Toast.LENGTH_SHORT
+        )
+    }
 }
