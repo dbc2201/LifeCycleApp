@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Toast.makeText(
             this,
-            "onCreate() method is called",
+            "onCreate() function is called",
             Toast.LENGTH_SHORT
         ).show()
     }
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         Toast.makeText(
             this,
-            "onStart() method is called",
+            "onStart() function is called",
             Toast.LENGTH_SHORT
         ).show()
     }
@@ -28,7 +28,16 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         Toast.makeText(
             this,
-            "onResume() method is called",
+            "onResume() function is called",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Toast.makeText(
+            this,
+            "onPause() function is called",
             Toast.LENGTH_SHORT
         ).show()
     }
