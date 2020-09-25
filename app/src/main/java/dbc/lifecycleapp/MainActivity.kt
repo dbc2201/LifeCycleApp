@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             this,
             "onStop() function is called",
             Toast.LENGTH_SHORT
-        )
+        ).show()
     }
 
     override fun onRestart() {
